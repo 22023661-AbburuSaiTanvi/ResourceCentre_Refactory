@@ -270,8 +270,8 @@ public class ResourceCentre {
 			return false;
 		
 		for (int i = 0; i < chromebookList.size(); i++) {
-
-			if (tag.equalsIgnoreCase(chromebookList.get(i).getAssetTag())
+			String assetTag = chromebookList.get(i).getAssetTag();	
+			if (tag.equalsIgnoreCase(assetTag)
 					&& chromebookList.get(i).getIsAvailable() == true) {
 				
 				chromebookList.get(i).setIsAvailable(false);
