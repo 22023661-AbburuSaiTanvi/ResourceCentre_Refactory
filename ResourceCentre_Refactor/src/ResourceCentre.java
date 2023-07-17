@@ -237,7 +237,7 @@ public class ResourceCentre {
 		
 		for (int i = 0; i < camcorderList.size(); i++) {
 			String assetTag = camcorderList.get(i).getAssetTag();
-			String availability = camcorderList.get(i).getIsAvailable();
+			boolean availability = camcorderList.get(i).getIsAvailable();
 			if (tag.equalsIgnoreCase(assetTag)				
 					&& availability == true) {
 				
@@ -272,7 +272,7 @@ public class ResourceCentre {
 		
 		for (int i = 0; i < chromebookList.size(); i++) {
 			String assetTag = chromebookList.get(i).getAssetTag();	
-			String availability = chromebookList.get(i).getIsAvailable();
+			boolean availability = chromebookList.get(i).getIsAvailable();
 			if (tag.equalsIgnoreCase(assetTag)
 					&& availability  == true) {
 				
@@ -308,7 +308,7 @@ public class ResourceCentre {
 		
 		for (int i = 0; i < camcorderList.size(); i++) {
 			String assetTag = camcorderList.get(i).getAssetTag();
-			String availability = camcorderList.get(i).getIsAvailable();
+			boolean availability = camcorderList.get(i).getIsAvailable();
 			if (tag.equalsIgnoreCase(assetTag)
 					&& availability == false) {
 				camcorderList.get(i).setIsAvailable(true);
@@ -341,7 +341,7 @@ public class ResourceCentre {
 		
 		for (int i = 0; i < chromebookList.size(); i++) {
 			String assetTag = chromebookList.get(i).getAssetTag();
-			String availability = chromebookList.get(i).getIsAvailable();
+			boolean availability = chromebookList.get(i).getIsAvailable();
 			if (tag.equalsIgnoreCase(assetTag )
 					&& availability == false) {
 				chromebookList.get(i).setIsAvailable(true);
